@@ -3,7 +3,6 @@ package s4.pengembangan_aplikasi_mobile.kel8pam
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.RadioGroup
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -103,17 +102,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
-//    private fun KUMIS(){
-//        kumis.setOnClickListener {
-//            if (kumis.isChecked) {
-//                imageMoustache.setVisibility(View.VISIBLE)
-//            } else {
-//                imageMoustache.setVisibility(View.INVISIBLE)
-//            }
-//        }
-//    }
     private fun ToggleKumis(){
-//    kumis.setOnClickListener{
         kumis.setOnCheckedChangeListener { group, checkedId ->
             if (checkedId == R.id.kumisA){
                 imageMoustache.setVisibility(View.VISIBLE)
@@ -126,12 +115,6 @@ class MainActivity : AppCompatActivity() {
                 imageMoustacheB.setVisibility(View.INVISIBLE)
             }
         }
-//        var id = kumis.checkedRadioButtonId
-//        if (id=='kumisA'){
-//            imageMoustache.setImageResource(R.drawable.moustache)
-//        }else if (id=='kumisB''){
-//        }
-//    }
     }
 
 }
